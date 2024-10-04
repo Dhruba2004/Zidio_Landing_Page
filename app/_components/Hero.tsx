@@ -13,7 +13,7 @@ function Hero() {
     <section className="h-[40rem] w-full flex p-5">
       <div className="grid grid-cols-1 md:grid-cols-2 p-5 gap-3 ">
         <div className="flex flex-col gap-5 mt-6">
-          <h2 className=" pointer-events-none whitespace-pre-wrap text-4xl lg:text-left mt-[6rem] text-gray-700 dark:text-[#fff] font-semibold bg-gradient-to-b from-black to-gray-300/80 bg-clip-text ">
+          <h2 className=" pointer-events-none whitespace-pre-wrap text-4xl lg:text-left mt-[6rem] text-violet-700 dark:text-[#fff] font-semibold bg-gradient-to-b from-black to-gray-300/80 bg-clip-text ">
             Software Development & Consultancy
           </h2>
           <div className="flex gap-2">
