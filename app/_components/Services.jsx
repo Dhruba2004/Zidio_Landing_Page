@@ -65,7 +65,7 @@ const Services = () => {
               <div
                 className="rounded-full px-5 py-3 dark:hidden"
               >
-                <Image height={40} width={40} src={'/right-arrow.gif'} className="darK:bg-transparent"/>
+                <Image height={40} width={40} src={'/right-arrow.gif'} className="dark:bg-transparent"/>
                
               </div>
             </BackgroundGradient>

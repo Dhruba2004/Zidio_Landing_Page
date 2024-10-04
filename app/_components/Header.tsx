@@ -53,7 +53,7 @@ function Header() {
   }, []);
   return (
     <nav
-      className={`flex justify-between sticky top-0 p-5 px-8 shadow-md z-50 text-white ${
+      className={`flex justify-between sticky top-0 p-5 px-8 shadow-md z-50 text-black dark:text-white ${
         isSticky ? "bg-white dark:bg-black shadow-lg" : "" 
       }`}
     >

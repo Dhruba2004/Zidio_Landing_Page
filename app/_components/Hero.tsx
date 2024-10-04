@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import Spline from "@splinetool/react-spline";
-import { Cover } from "@/components/ui/cover";
+import { CiFacebook } from "react-icons/ci";
+import { CiTwitter } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -25,6 +29,14 @@ function Hero() {
           <div className="flex gap-3">
             <ShimmerButton className="dark:text-white cursor-pointer">Lets Talk</ShimmerButton>
             <ShimmerButton className="dark:text-white cursor-pointer">Read More</ShimmerButton>
+          </div>
+          <div className="flex gap-4 items-center ml-[1rem]">
+            <Link className="cursor-pointer " href={'https://www.facebook.com/people/Zidio-Development/61556709391417/'}><CiFacebook className="text-4xl hover:scale-125 transition-all dark:text-blue-500"/></Link>
+            <Link className="cursor-pointer " href={'https://x.com/zidioDev'}><CiTwitter className="text-4xl dark:text-blue-500 hover:scale-125 transition-all"/></Link>
+            <Link className="cursor-pointer " href={'https://www.linkedin.com/company/zidio-development/mycompany/verification/'}><CiLinkedin className="text-4xl dark:text-blue-500 hover:scale-125 transition-all"/></Link>
+            <Link className="cursor-pointer " href={'/'}><CiYoutube className="text-4xl dark:text-blue-500 hover:scale-125 transition-all"/></Link>
+          
+
           </div>
         </div>
         <Spline className="hidden md:block" scene="https://prod.spline.design/Lyw0DkVocEUFPAoa/scene.splinecode" />
