@@ -51,7 +51,7 @@ const Services = () => {
   return (
     <section className="p-6 h-[90rem] flex justify-center items-center object-cover" style={{backgroundImage:`url('/bg.png')`}}>
       <div className="flex-col flex justify-center items-center">
-        <h2 className="text-xl text-white">IT Support For Business</h2>
+        <h2 className="text-xl text-white ">IT Support For Business</h2>
         <h2 className="font-bold text-4xl text-white">What we are Offering</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mr-[2rem] p-5 lg:mx-[2rem] ml-[7rem]">
           {cardOptions.map((item, index) => (
@@ -63,9 +63,9 @@ const Services = () => {
               </p>
 
               <div
-                className="rounded-full px-5 py-3 dark:hidden"
+                className="rounded-full px-5 py-3"
               >
-                <Image height={40} width={40} src={'/right-arrow.gif'} className="dark:bg-transparent"/>
+                <Image height={40} width={40} src={'/right-arrow.gif'}/>
                
               </div>
             </BackgroundGradient>

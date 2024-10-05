@@ -5,7 +5,6 @@ import Link from "next/link";
 import ThemeTogglebutton from "@/components/ui/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import ShinyButton from "@/components/ui/shiny-button";
-import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -78,16 +77,16 @@ function Header() {
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
             {" "}
-            <Menu />
+           <Image src={'/menu.svg'} height={30} width={30} alt="menu"/>
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
               <SheetDescription>
-                <div className="flex flex-col gap-5 items-center mt-[10rem]">
+                <div className="flex flex-col space-y-7 justify-center items-center mt-[10rem]">
                   {MenuOptions.map((item, index) => (
-                    <ul className="flex gap-5 items-center " key={index}>
+                    <ul className="flex gap-5 items-center" key={index}>
                       <li className="">
-                        <Link className="text-2xl text-black dark:text-white  dark:hover:text-violet-700  hover:text-violet-700 transition-all" href={item.path}>
+                        <Link className="text-3xl text-black dark:text-white  dark:hover:text-violet-700  hover:text-violet-700 transition-all" href={item.path}>
                           {item.name}
                         </Link>
                       </li>
