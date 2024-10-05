@@ -49,7 +49,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="p-6 h-[90rem] flex justify-center items-center object-cover" style={{backgroundImage:`url('/bg.png')`}}>
+    <section className="p-10 h-[90rem] flex justify-center items-center object-cover" style={{backgroundImage:`url('/bg.png')`}}>
       <div className="flex-col flex justify-center items-center">
         <h2 className="text-xl text-white ">IT Support For Business</h2>
         <h2 className="font-bold text-4xl text-white">What we are Offering</h2>

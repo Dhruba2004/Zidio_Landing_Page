@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,11 +13,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Header() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [headerHeight, setHeaderHeight] = useState(0);
   const MenuOptions = [
     {
       id: 1,
@@ -53,11 +53,16 @@ function Header() {
   return (
     <nav
       className={`flex justify-between sticky top-0 p-5 px-8 shadow-md z-50 text-black dark:text-white ${
-        isSticky ? "bg-white dark:bg-black shadow-lg" : "" 
+        isSticky ? "bg-white dark:bg-black shadow-lg" : ""
       }`}
     >
       <div className="flex gap-3 items-center">
-        <Image src={"/logo.png"} alt="logo" height={150} width={150} />
+        <Image
+          src = {!isDarkMode  ? "/light/logo.png" : "/dark/logo.png"}
+          alt="logo"
+          height={150}
+          width={150}
+        />
       </div>
       <div className="lg:flex gap-5 items-center hidden ">
         {MenuOptions.map((item, index) => (
@@ -72,12 +77,12 @@ function Header() {
       </div>
       <div className="flex gap-3">
         <ShinyButton className="lg:block hidden">Get Quote</ShinyButton>
-        <ThemeTogglebutton className="top-2 right-6" />
+        <ThemeTogglebutton className="top-2 right-6"/>
 
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
             {" "}
-           <Image src={'/menu.svg'} height={30} width={30} alt="menu"/>
+            <Image src={"/menu.svg"} height={30} width={30} alt="menu" />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
@@ -86,7 +91,10 @@ function Header() {
                   {MenuOptions.map((item, index) => (
                     <ul className="flex gap-5 items-center" key={index}>
                       <li className="">
-                        <Link className="text-3xl text-black dark:text-white  dark:hover:text-violet-700  hover:text-violet-700 transition-all" href={item.path}>
+                        <Link
+                          className="text-3xl text-black dark:text-white  dark:hover:text-violet-700  hover:text-violet-700 transition-all"
+                          href={item.path}
+                        >
                           {item.name}
                         </Link>
                       </li>
