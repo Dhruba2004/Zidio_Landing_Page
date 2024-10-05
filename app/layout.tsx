@@ -4,6 +4,7 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 import { ThemeProvider } from "next-themes";
 import Header from "./_components/Header";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: "Zidio Development",
@@ -17,12 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ClerkProvider>
       <body className={outfit.className}>
       <ThemeProvider attribute="class">
         <Header/>
           {children}
           </ThemeProvider>
       </body>
+      </ClerkProvider>
+      
     </html>
   );
 }

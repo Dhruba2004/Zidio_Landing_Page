@@ -14,6 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
+import { UserButton } from "@clerk/nextjs";
 
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -76,6 +77,7 @@ function Header() {
         ))}
       </div>
       <div className="flex gap-3">
+        <UserButton afterSwitchSessionUrl="/"/>
         <ShinyButton className="lg:block hidden">Get Quote</ShinyButton>
         <ThemeTogglebutton className="top-2 right-6"/>
 
