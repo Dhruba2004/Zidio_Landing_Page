@@ -53,7 +53,7 @@ const Services = () => {
       <div className="flex-col flex justify-center items-center">
         <h2 className="text-xl text-white ">IT Support For Business</h2>
         <h2 className="font-bold text-4xl text-white">What we are Offering</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mr-[2rem] p-5 lg:mx-[2rem] ml-[7rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mr-[2rem] p-5 lg:mx-[2rem] ml-[7rem] mx-auto">
           {cardOptions.map((item, index) => (
             <BackgroundGradient key={index} className=" flex flex-col items-center justify-center max-w-sm rounded-2xl p-4 sm:p-10 bg-white dark:bg-zinc-900 h-[350px] w-[350px] gap-5 cursor-pointer">
               <Image height={50} width={50} src={item.image} />

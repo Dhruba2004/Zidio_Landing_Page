@@ -84,7 +84,7 @@ function Header() {
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
             {" "}
-            <Image src={"/menu.svg"} height={30} width={30} alt="menu" />
+            <Image src={"/menu.svg"} height={30} width={30} alt="menu"  />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
