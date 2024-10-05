@@ -1,6 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/moving-border";
+import ShinyButton from "@/components/ui/shiny-button";
 const introInfo = [
   {
     id: 1,
@@ -44,7 +46,7 @@ function Intro() {
           <h1 className="text-5xl font-semibold mt-4">
             Your Reliable Partner for IT Services Dedicated to Your Success
           </h1>
-          <p className="text-gray-500 mt-8 lg:mx-[13rem] lg:mr-[-6rem] relative lg:right-[13rem]">
+          <p className="text-gray-500 dark:text-gray-200 mt-8 lg:mx-[13rem] lg:mr-[-6rem] relative lg:right-[13rem]">
             At Zidio, we're your trusted IT services partner, ensuring your
             success with reliable solutions tailored to your business needs.
             Count on us for robust software development, comprehensive IT
@@ -54,14 +56,22 @@ function Intro() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-[2rem]">
             {introInfo.map((item, index) => (
               <div className="flex gap-5" key={index}>
-                <div className="bg-white rounded-xl py-2 px-5 cursor-pointer hover:scale-125 transition-all">
-                <Image height={20} width={40} src={item.icon} alt="icon"/>
+                <div className="bg-white rounded-xl py-2 px-5 cursor-pointer hover:scale-125 transition-all flex justify-center items-center">
+                  <Image height={20} width={40} src={item.icon} alt="icon" />
                 </div>
-                
+
                 <h2 className="relative top-4">{item.title}</h2>
               </div>
+             
             ))}
           </div>
+         
+          <div className="mt-9">
+          <Link href="/about">
+          <ShinyButton className="w-full">About More</ShinyButton>
+          </Link>
+          </div>
+          
         </div>
       </div>
     </section>
