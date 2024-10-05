@@ -4,7 +4,7 @@ import Image from "next/image";
 function AboutPage() {
   return (
     <section
-      className="flex flex-col object-cover min-h-screen dark:bg-zinc-800"
+      className="flex flex-col object-cover max-h-screen dark:bg-zinc-800"
       style={{ backgroundImage: `url('/about-bg.jpg')` }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 p-4 md:p-8 lg:p-16">
