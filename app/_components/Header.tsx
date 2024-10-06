@@ -56,12 +56,15 @@ function Header() {
       }`}
     >
       <div className="flex gap-3 items-center">
+        <Link href={'/'}>
         <Image
           src = {!isDarkMode  ? "/light/logo.png" : "/dark/logo.png"}
           alt="logo"
           height={150}
           width={150}
         />
+        </Link>
+       
       </div>
       <div className="lg:flex gap-5 items-center hidden ">
         {MenuOptions.map((item, index) => (

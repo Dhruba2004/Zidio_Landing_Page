@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/moving-border";
+import { Button } from "@/components/ui/button";
 import ShinyButton from "@/components/ui/shiny-button";
 const introInfo = [
   {
@@ -65,7 +65,7 @@ function Intro() {
       </div>
       <div className="mt-6 md:mt-9">
         <Link href="/about">
-          <ShinyButton className="w-full">About More</ShinyButton>
+          <Button className="w-full">About More</Button>
         </Link>
       </div>
     </div>

@@ -30,12 +30,13 @@ export default function Team() {
     },
   ];
   return (
-    <section className=" h-screen flex justify-center flex-col items-center gap-5 p-6">
-      <h1 className="text-5xl font-bold text-blue-900">Dedicated Team</h1>
-      <h2 className="text-gray-500 font-bold">Meet Our Dedicated Members For Any Enquery</h2>
-      <div className="flex flex-row items-center justify-center w-full gap-3">
-        <AnimatedTooltip items={people} />
-      </div>
-    </section>
+    <section className="min-h-screen flex justify-center flex-col items-center gap-5 p-4 sm:p-6">
+  <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-blue-900">Dedicated Team</h1>
+  <h2 className="text-sm sm:text-base md:text-lg text-gray-200 font-bold text-center">Meet Our Dedicated Members For Any Enquiry</h2>
+  <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-3">
+    <AnimatedTooltip items={people} />
+  </div>
+</section>
+
   );
 }

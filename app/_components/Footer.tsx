@@ -13,7 +13,7 @@ function Footer() {
           alt="logo"
           height={150}
           width={150}
-          className="w-24 h-14 sm:w-36 sm:h-36 lg:w-40 lg:h-20"
+          className="w-34 h-10"
         />
       </Link>
       <p className="mb-7 text-sm sm:text-base lg:text-lg">
