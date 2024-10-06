@@ -39,7 +39,16 @@ function Hero() {
 
           </div>
         </div>
-        <Spline className="hidden md:block" scene="https://prod.spline.design/Lyw0DkVocEUFPAoa/scene.splinecode" />
+        <div className="hidden lg:block md:ml-[6rem]">
+        <Image
+            height={500}
+            width={500}
+            alt="hero"
+            src={"/hero.png"}
+            className="h-[700px] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+          />
+        </div>
+        {/* <Spline className="hidden md:block" scene="https://prod.spline.design/Lyw0DkVocEUFPAoa/scene.splinecode" /> */}
       </div>
     </section>
   );
