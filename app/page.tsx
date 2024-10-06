@@ -13,8 +13,7 @@ export default function Home() {
       <Intro/>
       <Services/>
       <Team/>
-
-    </main>
+      </main>
     
   );
 }
