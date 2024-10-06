@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 
 function ServicePage() {
   const serviceInfo = [
@@ -62,7 +64,9 @@ function ServicePage() {
     },
   ];
   return (
-    <section className="flex flex-col h-[90vh] items-center justify-center p-10">
+    <div>
+      <Header/>
+<section className="flex flex-col h-[90vh] items-center justify-center p-10">
     <div className="flex flex-col gap-[5rem]">
         <div className="flex flex-col">
         <h2
@@ -79,9 +83,9 @@ function ServicePage() {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 relative top-[12rem] mx-auto">
         {serviceInfo.map((item, index) => (
            
-          <div className="flex justify-center items-center flex-col gap-5 shadow-md h-[200px] w-[300px] bg-white dark:bg-zinc-900 p-10 max-w-sm rounded-lg cursor-pointer" key={index} style={{border:"1px solid violet"}}> 
+          <div className="flex justify-center items-center flex-col gap-5 shadow-md h-[200px] w-[300px] p-10 max-w-sm rounded-lg cursor-pointer" key={index} style={{border:"1px solid violet"}}> 
           <Image width={50} height={50} alt="icon" src={item.icon}/>
-            <h2 className="text-center">{item.title}</h2>
+            <h2 className="text-center dark:text-white text-black">{item.title}</h2>
             <p className="text-gray-500 text-center mr-4">{item.description}</p>
         <Button className="mt-3">Learn More</Button>
 
@@ -92,6 +96,9 @@ function ServicePage() {
      
       
     </section>
+    <Footer/>
+    </div>
+    
   );
 }
 

@@ -57,7 +57,7 @@ const Services = () => {
           {cardOptions.map((item, index) => (
             <BackgroundGradient key={index} className=" flex flex-col items-center justify-center max-w-sm rounded-2xl p-4 sm:p-10 bg-white dark:bg-zinc-900 h-[350px] w-[350px] gap-5 cursor-pointer">
               <Image height={50} width={50} src={item.image} />
-              <h2 className="font-bold text-xl">{item.Title}</h2>
+              <h2 className="font-bold text-xl text-black">{item.Title}</h2>
               <p className="text-center mt-4 text-gray-500 dark:text-gray-800">
                 {item.subTitle}
               </p>

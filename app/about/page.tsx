@@ -1,12 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 
 function AboutPage() {
   return (
-    <section
+    <div>
+      <Header/>
+<section
       className="flex flex-col object-cover max-h-screen dark:bg-zinc-800"
       style={{ backgroundImage: `url('/about-bg.jpg')` }}
     >
+    
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 p-4 md:p-8 lg:p-16">
         <div className="flex justify-center mt-8 md:mt-16">
           <Image
@@ -40,6 +45,10 @@ function AboutPage() {
         </div>
       </div>
     </section>
+    <Footer/>
+    </div>
+    
+    
   );
 }
 
