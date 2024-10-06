@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import ShimmerButton from "@/components/ui/shimmer-button";
-import Spline from "@splinetool/react-spline";
 import { CiFacebook } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";

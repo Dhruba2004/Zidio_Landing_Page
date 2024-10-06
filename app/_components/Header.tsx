@@ -3,14 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeTogglebutton from "@/components/ui/ThemeToggle";
-import { Button } from "@/components/ui/button";
 import ShinyButton from "@/components/ui/shiny-button";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
