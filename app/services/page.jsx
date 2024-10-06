@@ -63,36 +63,38 @@ function ServicePage() {
   ];
   return (
   
-<section className="flex flex-col h-[90vh] items-center justify-center p-10">
-    <div className="flex flex-col gap-[5rem]">
-        <div className="flex flex-col">
-        <h2
-        className="text-2xl dark:text-white text-center mt-2"
+<section className="flex flex-col min-h-screen items-center justify-center p-4 md:p-10">
+  <div className="flex flex-col gap-10 md:gap-12">
+    <div className="flex flex-col">
+      <h2
+        className="text-xl md:text-2xl dark:text-white text-center mt-4 md:mt-8" 
         style={{ color: "blueviolet" }}
       >
         What We Provides?
       </h2>
-      <h1 className="text-4xl text-center font-bold relative top-[6rem]">
-        Provide Interective IT Solution & Business Services
-      </h1> 
-        </div>
-    
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 relative top-[12rem] mx-auto">
-        {serviceInfo.map((item, index) => (
-           
-          <div className="flex justify-center items-center flex-col gap-5 shadow-md h-[200px] w-[300px] p-10 max-w-sm rounded-lg cursor-pointer" key={index} style={{border:"1px solid violet"}}> 
-          <Image width={50} height={50} alt="icon" src={item.icon}/>
-            <h2 className="text-center dark:text-white text-black">{item.title}</h2>
-            <p className="text-gray-500 text-center mr-4">{item.description}</p>
-        <Button className="mt-3">Learn More</Button>
-
-          </div>
-        ))}
-      </div> 
+      <h1 className="text-2xl md:text-4xl text-center font-bold mt-4 md:mt-8"> 
+        Provide Interactive IT Solution & Business Services
+      </h1>
     </div>
-     
-      
-    </section>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 mt-8 md:mt-12 mx-auto"> {/* Adjusted margin-top */}
+      {serviceInfo.map((item, index) => (
+        <div
+          className="flex justify-center items-center flex-col gap-5 shadow-md h-auto w-full max-w-xs p-6 md:p-10 rounded-lg cursor-pointer"
+          key={index}
+          style={{ border: "1px solid violet" }}
+        >
+          <Image width={50} height={50} alt="icon" src={item.icon} />
+          <h2 className="text-center dark:text-white text-black">{item.title}</h2>
+          <p className="text-gray-500 text-center">{item.description}</p>
+          <Button className="mt-3">Learn More</Button>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
   
     
   );
