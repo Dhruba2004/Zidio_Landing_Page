@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import { BackgroundGradient } from "../../components/ui/background-gradient";
+import { useTheme } from "next-themes";
 
 const Services = () => {
+  const { theme, setTheme } = useTheme();
   const cardOptions = [
     {
       id: 1,
@@ -55,9 +57,9 @@ const Services = () => {
         <h2 className="font-bold text-4xl text-white">What we are Offering</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:mr-[2rem] p-5 lg:mx-[2rem] mx-auto">
           {cardOptions.map((item, index) => (
-            <BackgroundGradient key={index} className=" flex flex-col items-center justify-center max-w-sm rounded-2xl p-4 sm:p-10 bg-white dark:bg-blue-900 h-[350px] w-[350px] gap-5 cursor-pointer">
+            <BackgroundGradient key={index} className={`flex flex-col items-center justify-center max-w-sm rounded-2xl p-4 sm:p-10 h-[350px] w-[350px] gap-5 cursor-pointer ${theme ==='light' ? 'bg-white':'bg-black'}`}>
               <Image height={50} width={50} src={item.image} />
-              <h2 className="font-bold text-xl text-black">{item.Title}</h2>
+              <h2 className="font-bold text-xl text-black dark:text-white">{item.Title}</h2>
               <p className="text-center mt-4 text-gray-500 dark:text-gray-800">
                 {item.subTitle}
               </p>
