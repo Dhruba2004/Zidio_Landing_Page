@@ -20,11 +20,11 @@ function ContactPage() {
           <div className="">
             <h1 className="text-4xl font-bold p-[3rem]">Write to Us Anytime</h1>
             <div>
-              <div className="flex gap-4 max-w-2xl ml-[3rem]">
+              <div className="flex gap-4 max-w-2xl ml-[1rem]">
                 <Input type="text" placeholder="Your Name" />
                 <Input type="text" placeholder="Enter Email" />
               </div>
-              <div className="flex gap-4 max-w-2xl ml-[3rem] mt-[3rem]">
+              <div className="flex gap-4 max-w-2xl ml-[1rem] mt-[3rem]">
                 <Input type="text" placeholder="Phone Number" />
                 <Select>
                   <SelectTrigger className="">
@@ -41,7 +41,7 @@ function ContactPage() {
 
               <Textarea
                 placeholder="Type your message here."
-                className="lg:w-full lg:ml-[3rem] mt-[3rem] max-w-sm ml-[3rem]"
+                className="lg:w-full lg:ml-[1rem] mt-[3rem] max-w-lg ml-[1rem]"
               />
 
               <Button className="max-w-2xl mt-[2rem] ml-[3rem]">

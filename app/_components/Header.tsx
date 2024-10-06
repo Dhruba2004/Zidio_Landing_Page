@@ -58,7 +58,7 @@ function Header() {
       <div className="flex gap-3 items-center">
         <Link href={'/'}>
         <Image
-          src = {!isDarkMode  ? "/light/logo.png" : "/dark/logo.png"}
+          src = {isDarkMode  ? "/light/logo.png" : "/dark/logo.png"}
           alt="logo"
           height={150}
           width={150}
@@ -80,7 +80,7 @@ function Header() {
       <div className="flex gap-3">
         <UserButton afterSwitchSessionUrl="/"/>
         <ShinyButton className="lg:block hidden">Get Quote</ShinyButton>
-        <ThemeTogglebutton className="top-2 right-6"/>
+        <div onChange={()=>setIsDarkMode(true)}><ThemeTogglebutton className="top-2 right-6"/></div>
 
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
