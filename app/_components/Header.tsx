@@ -13,9 +13,10 @@ import {
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import { UserButton } from "@clerk/nextjs";
+import { useTheme } from "next-themes";
 
 function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme, setTheme } = useTheme();
   const [isSticky, setIsSticky] = useState(false);
   const MenuOptions = [
     {
@@ -58,7 +59,7 @@ function Header() {
       <div className="flex gap-3 items-center">
         <Link href={'/'}>
         <Image
-          src = {isDarkMode  ? "/light/logo.png" : "/dark/logo.png"}
+          src = {theme === 'light'? "/logo.png" : "/zidio-header-dark.png"}
           alt="logo"
           height={150}
           width={150}
@@ -80,7 +81,7 @@ function Header() {
       <div className="flex gap-3">
         <UserButton afterSwitchSessionUrl="/"/>
         <ShinyButton className="lg:block hidden">Get Quote</ShinyButton>
-        <div onChange={()=>setIsDarkMode(true)}><ThemeTogglebutton className="top-2 right-6"/></div>
+        <ThemeTogglebutton className="top-2 right-6"/>
 
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
