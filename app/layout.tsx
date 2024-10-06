@@ -22,6 +22,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={outfit.className}>
           <ThemeProvider attribute="class">
+            <Header/>
             {children}
             <Footer/>
           </ThemeProvider>

@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Header from "../_components/Header";
-import Footer from "../_components/Footer";
 
 function ServicePage() {
   const serviceInfo = [
@@ -64,8 +62,7 @@ function ServicePage() {
     },
   ];
   return (
-    <div>
-      <Header/>
+  
 <section className="flex flex-col h-[90vh] items-center justify-center p-10">
     <div className="flex flex-col gap-[5rem]">
         <div className="flex flex-col">
@@ -96,8 +93,7 @@ function ServicePage() {
      
       
     </section>
-    <Footer/>
-    </div>
+  
     
   );
 }

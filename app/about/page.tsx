@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Header from "../_components/Header";
-import Footer from "../_components/Footer";
 
 function AboutPage() {
   return (
-    <div>
-      <Header/>
+    
 <section
       className="flex flex-col object-cover max-h-screen dark:bg-zinc-800"
       style={{ backgroundImage: `url('/about-bg.jpg')` }}
@@ -45,8 +42,6 @@ function AboutPage() {
         </div>
       </div>
     </section>
-    <Footer/>
-    </div>
     
     
   );
