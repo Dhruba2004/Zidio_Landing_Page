@@ -35,7 +35,7 @@ function Intro() {
         src={"/intro.png"}
         height={530}
         width={530}
-        className="block md:h-[630px] md:w-[1230px]"
+        className="block md:h-[630px] md:w-[1430px]"
         alt="intro"
       />
     </div>
