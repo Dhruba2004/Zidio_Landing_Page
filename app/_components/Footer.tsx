@@ -1,15 +1,19 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useTheme } from "next-themes";
+
 function Footer() {
+  const { theme, setTheme } = useTheme();
   return (
     <footer className="text-gray-400 py-12 max-h-screen">
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
     <div className="relative sm:right-0 lg:right-[8rem] flex flex-col gap-5">
       <Link href={"/"}>
         <Image
-          src={"/zidio-dark.png"}
+          src={theme === 'light'? "/logo.png" : "/zidio-dark.png"}
           alt="logo"
           height={150}
           width={150}
