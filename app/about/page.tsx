@@ -24,7 +24,7 @@ function AboutPage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold">
             Who we are and What we do?
           </h1>
-          <p className="text-gray-500 mt-4 text-sm md:text-base lg:text-lg">
+          <p className="text-gray-500 mb-4 text-sm md:text-base lg:text-lg">
             Welcome to Zidio Development Pvt. Ltd. We are a trailblazing
             software development company where innovation meets expertise. Our
             team of skilled developers and creative thinkers specializes in

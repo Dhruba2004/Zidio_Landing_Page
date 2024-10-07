@@ -51,30 +51,27 @@ const Services = () => {
     },
   ];
   return (
-    <section className="p-4 sm:p-6 md:p-10 h-auto flex justify-center items-center object-cover" style={{backgroundImage:`url('/bg.png')`}}>
-      <div className="flex-col flex justify-center items-center mx-auto">
-        <h2 className="text-xl text-white ">IT Support For Business</h2>
-        <h2 className="font-bold text-4xl text-white">What we are Offering</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:mr-[2rem] p-5 lg:mx-[2rem] mx-auto">
-          {cardOptions.map((item, index) => (
-            <BackgroundGradient key={index} className={`flex flex-col items-center justify-center max-w-sm rounded-2xl p-4 sm:p-10 h-[350px] w-[350px] gap-5 cursor-pointer ${theme ==='light' ? 'bg-white':'bg-black'}`}>
-              <Image height={50} width={50} src={item.image} />
-              <h2 className="font-bold text-xl text-black dark:text-white">{item.Title}</h2>
-              <p className="text-center mt-4 text-gray-500 dark:text-gray-800">
-                {item.subTitle}
-              </p>
+    <section className="p-4 sm:p-6 md:p-10 h-auto flex justify-center items-center object-cover" style={{backgroundImage: `url('/bg.png')`}}>
+  <div className="flex flex-col justify-center items-center mx-auto">
+    <h2 className="text-lg sm:text-xl text-white">IT Support For Business</h2>
+    <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-white text-center">What we are Offering</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5 mx-auto">
+      {cardOptions.map((item, index) => (
+         <BackgroundGradient key={index} className={`flex flex-col items-center justify-center max-w-xs sm:max-w-sm rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 h-[350px] w-full gap-5 cursor-pointer ${theme ==='light' ? 'bg-white':'bg-black'}`}>
+          <Image height={50} width={50} src={item.image} />
+          <h2 className="font-bold text-lg sm:text-xl text-black dark:text-white">{item.Title}</h2>
+          <p className="text-center mt-4 text-gray-500 dark:text-gray-800">
+            {item.subTitle}
+          </p>
+          <div className="rounded-full px-5 py-3">
+            <Image height={40} width={40} src={'/right-arrow.gif'} />
+          </div>
+        </BackgroundGradient>
+      ))}
+    </div>
+  </div>
+</section>
 
-              <div
-                className="rounded-full px-5 py-3"
-              >
-                <Image height={40} width={40} src={'/right-arrow.gif'}/>
-               
-              </div>
-            </BackgroundGradient>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 };
 
