@@ -10,16 +10,16 @@ function AboutPage() {
     >
     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 p-4 md:p-8 lg:p-16">
-        <div className="flex justify-center mt-8 md:mt-16">
+        <div className="flex justify-center mt-8 md:mb-[12rem]">
           <Image
-            className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+            className=" w-full max-w-xs md:max-w-md lg:max-w-lg"
             src={"/about.png"}
             height={530}
             width={530}
             alt="intro"
           />
         </div>
-        <div className="flex flex-col gap-3 mt-8 md:mt-16">
+        <div className="flex flex-col gap-3 mb-[1rem] md:mt-[4rem]">
           <h2 className="text-blue-800 text-lg md:text-xl lg:text-2xl">Software Development & Consultancy</h2>
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold">
             Who we are and What we do?

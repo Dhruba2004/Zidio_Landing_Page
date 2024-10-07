@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ThemeTogglebutton from "@/components/ui/ThemeToggle";
 import ShinyButton from "@/components/ui/shiny-button";
+import { AlignJustify } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -86,7 +87,7 @@ function Header() {
         <Sheet>
           <SheetTrigger className="lg:hidden sm:block">
             {" "}
-            <Image src={"/menu.svg"} height={30} width={30} alt="menu"  />
+            <AlignJustify height={30} width={30}/>
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
