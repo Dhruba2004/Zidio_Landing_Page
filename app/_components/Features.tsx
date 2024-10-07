@@ -31,10 +31,10 @@ function Features() {
 
   return (
     <section className="flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:ml-[12rem] p-5 lg:mx-[2rem] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:ml-[12rem] p-5 lg:mx-[2rem] mx-auto">
         {cardOptions.map((item, index) => (
-          <NeonGradientCard key={index} className=" h-[350px] w-[350px] max-w-sm items-center justify-center text-center gap-">
-            <item.icon className="text-5xl text-blue-400 ml-[8rem] mt-[2rem]" />
+          <NeonGradientCard key={index} className="h-[350px] w-full max-w-sm flex flex-col items-center justify-center text-center gap-5">
+            <item.icon className="text-5xl text-blue-400 mx-auto mt-[2rem]" />
             <div className="flex flex-col mt-[2rem]">
             <h2 className="font-bold text-xl">{item.Title}</h2>
             <p className="text-center mt-4 text-gray-500">{item.subTitle}</p>
