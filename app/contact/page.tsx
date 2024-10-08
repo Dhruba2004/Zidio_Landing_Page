@@ -14,8 +14,8 @@ import {
 function ContactPage() {
   return (
     <section className="h-screen">
-      <div className="container mx-auto">
-        <h1 className="text-center text-5xl mt-5 font-bold">Contact Us</h1>
+      <div className="container mx-auto my-[2rem]">
+        <h1 className="text-center text-7xl mt-5 font-bold">Contact Us</h1>
         <div className="shadow-md h-[600px] max-w-[1080px] grid grid-cols-1 lg:grid-cols-2 gap-[12rem] px-5 mx-auto">
           <div className="">
             <h1 className="text-3xl sm:text-5xl  font-bold p-[3rem]">Write to Us Anytime</h1>
