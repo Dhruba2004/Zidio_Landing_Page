@@ -30,9 +30,9 @@ export default function Team() {
     },
   ];
   return (
-    <section className="max-h-screen flex justify-center flex-col items-center gap-5 p-4 sm:p-[14vmin]">
+    <section className="max-h-screen flex justify-center flex-col items-center gap-5 p-4 sm:p-[16vmin]">
   <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold">Dedicated Team</h1>
-  <h2 className="text-sm sm:text-base md:text-lg dark:text-white font-bold text-center">Meet Our Dedicated Members For Any Enquiry</h2>
+  <h2 className="text-sm sm:text-base md:text-lg dark:text-white text-center">Meet Our Dedicated Members For Any Enquiry</h2>
   <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-3">
     <AnimatedTooltip items={people} />
   </div>

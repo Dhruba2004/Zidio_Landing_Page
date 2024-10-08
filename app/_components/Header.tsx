@@ -18,7 +18,7 @@ import { useTheme } from "next-themes";
 
 function Header() {
   const { theme, setTheme } = useTheme();
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
   const MenuOptions = [
     {
       id: 1,
@@ -41,21 +41,19 @@ function Header() {
       path: "/contact",
     },
   ];
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY; // Get current scroll position
-      setIsSticky(scrollY > 50); // Set sticky based on a threshold (adjust as needed)
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY; // Get current scroll position
+  //     setIsSticky(scrollY > 50); // Set sticky based on a threshold (adjust as needed)
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
-  }, []);
+  //   return () => window.removeEventListener("scroll", handleScroll); // Cleanup
+  // }, []);
   return (
     <nav
-      className={`flex justify-between sticky top-0 p-5 px-8 shadow-md z-50 text-black dark:text-white ${
-        isSticky ? "bg-white dark:bg-black shadow-lg" : ""
-      }`}
+      className='flex justify-between sticky top-0 p-5 px-8 shadow-md z-50 text-black dark:text-white bg-white dark:bg-black'
     >
       <div className="flex gap-3 items-center">
         <Link href={'/'}>
