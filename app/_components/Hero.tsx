@@ -15,7 +15,7 @@ function Hero() {
     <section className="w-full flex p-[5rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="flex flex-col gap-5 relative md:bottom-[2rem]">
-          <h2 className="pointer-events-none whitespace-pre-wrap text-3xl md:text-4xl lg:text-left mt-10 md:mt-[6rem] text-violet-700 dark:text-white font-semibold bg-gradient-to-b from-black to-gray-300/80 bg-clip-text">
+          <h2 className="text-3xl md:text-5xl lg:text-left mt-10 md:mt-[6rem] text-violet-700 dark:text-white font-semibold ">
             Software Development & Consultancy
           </h2>
           <div className="flex gap-2">
@@ -69,7 +69,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="hidden lg:block md:ml-[6rem]">
+        <div className="hidden md:block md:ml-[6rem]">
           <Image
             height={500}
             width={500}
