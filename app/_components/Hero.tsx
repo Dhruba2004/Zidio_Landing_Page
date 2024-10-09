@@ -12,16 +12,16 @@ import Link from "next/link";
 function Hero() {
   const { theme, setTheme } = useTheme();
   return (
-    <section className="w-full flex p-[5rem]">
+    <section className="w-full flex p-[2rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div className="flex flex-col gap-5 relative md:bottom-[2rem]">
-          <h2 className="text-3xl md:text-5xl lg:text-left mt-10 md:mt-[6rem] text-violet-700 dark:text-white font-semibold ">
+        <div className="flex flex-col gap-5 relative md:bottom-[1vmin] md:left-[5vmin]">
+          <h2 className="text-3xl md:text-4xl lg:text-left mt-10 md:mt-[6rem] text-violet-700 dark:text-white font-semibold ">
             Software Development & Consultancy
           </h2>
           <div className="flex gap-2">
             {theme ==='light' ?<h1 className="uppercase font-bold text-2xl md:text-3xl">
           Business Innovation Through Technology
-        </h1> : <><span className=" uppercase absolute mx-auto flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl box-content font-extrabold text-transparent select-none">
+        </h1> : <><span className=" uppercase absolute md:text-3xl mx-auto flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl box-content font-extrabold text-transparent select-none">
         Business Innovation Through Technology
        
   </span>

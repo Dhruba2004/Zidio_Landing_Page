@@ -29,17 +29,17 @@ const introInfo = [
 function Intro() {
   return (
     <section className="p-4 md:p-10 h-auto md:h-[60rem]">
-  <div className="flex flex-col md:flex-row gap-8 md:gap-[5rem] justify-between">
+  <div className="flex flex-col md:flex-row gap-8 md:gap-[5rem] justify-between relative bottom-[1vmin]">
     <div className="mt-4 md:mt-[7rem] flex justify-center md:block">
       <Image
         src={"/intro.png"}
         height={530}
         width={530}
-        className="block md:h-[630px] md:w-[1430px]"
+        className="block md:h-[630px] md:w-[1730px]"
         alt="intro"
       />
     </div>
-    <div className="mt-4 md:mt-[7rem]">
+    <div className="mt-4 md:mt-[9rem]">
       <h2 className="text-lg md:text-xl text-blue-600 font-bold mt-3">
         Software Development & Services
       </h2>
