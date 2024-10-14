@@ -4,7 +4,8 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 import { ThemeProvider } from "next-themes";
 import Header from "./_components/Header";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, useUser } from "@clerk/nextjs";
+import Provider from "./provider";
 import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
@@ -22,9 +23,10 @@ export default function RootLayout({
       <html lang="en">
         <body className={outfit.className}>
           <ThemeProvider attribute="class">
-            <Header/>
+            <Provider>
             {children}
-            <Footer/>
+            </Provider>
+           
           </ThemeProvider>
         </body>
       </html>
